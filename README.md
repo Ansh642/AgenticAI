@@ -1,65 +1,57 @@
 
+
 ```markdown
-# TaskFlowAI – AI-Powered To-Do Assistant
+# AI To-Do List Agent
 
-TaskFlowAI is an intelligent CLI to-do application that uses Google's Gemini AI and PostgreSQL to manage tasks through natural language commands.
-
-## Features
-- Natural language task management (add/view/update/delete)
-- AI agentic reasoning (PLAN → ACT → OBSERVE → RESPOND)
-- Full CRUD operations with search functionality
-- PostgreSQL database with Drizzle ORM
-- Interactive CLI interface
+A CLI tool that uses Google Gemini to manage your to-do list through natural language commands.
 
 ## Quick Start
 
-1. Clone repo:
+1. Clone repo and install dependencies:
 ```bash
-git clone https://github.com/your-username/taskflow-ai.git
-cd taskflow-ai
+git clone https://github.com/Ansh642/AgenticAI.git
+cd ai-todo-agent
+npm install
 ```
 
-2. Install dependencies:
+2. Create `.env` file:
+```env
+GOOGLE_API_KEY=your_key_here
+DATABASE_URL=postgres://user:pass@localhost:5432/todos
+```
+
+3. Start the agent:
 ```bash
-pnpm install
+node index.js
 ```
 
-3. Create `.env` file:
-```
-GOOGLE_API_KEY=your_api_key_here
-```
+## How to Use
 
-4. Run the app:
-```bash
-pnpm start
-```
+Type natural language commands:
+- "Add buy milk to my list"
+- "Show all tasks"
+- "Update task 3 to 'Workout at 6pm'"
+- "Delete task 5"
 
-## Example Commands
-```
-"Add 'Buy groceries at 5pm' to my todos"
-"Show all tasks due today"
-"Delete task number 3"
-"Update task 2 to 'Meeting at 2pm tomorrow'"
-"Search for 'email' in my tasks"
-```
-
-## Project Structure
-```
-db/
-  index.js    # DB connection
-  schema.js   # Todo schema
-index.js      # Main application
-```
-
-## Tech Stack
-- Node.js
+## Requirements
+- Node.js 18+
 - PostgreSQL
-- Drizzle ORM
-- Google Gemini AI
-- pnpm
+- Google Gemini API key
 
-## Author
-Ansh Agarwal  
-[Portfolio](https://my-portfolio-rosy-five.vercel.app/) | 
-[GitHub](https://github.com/Ansh642)
+## Commands
+| Command       | Example                     |
+|---------------|-----------------------------|
+| Add task      | "Add dentist appointment"   |
+| List tasks    | "Show all todos"            |
+| Update task   | "Change task 2 to 'Read'"   |
+| Delete task   | "Remove task 3"             |
+| Search        | "Find tasks with 'meeting'" |
+```
+
+This version:
+- Uses clean markdown formatting
+- Has minimal but essential sections
+- Includes a handy command reference table
+- Provides copy-paste ready setup instructions
+- Is properly spaced for good GitHub rendering
 
