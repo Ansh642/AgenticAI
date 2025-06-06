@@ -34,7 +34,7 @@ A smart to-do list application powered by Google's Gemini AI, built using Node.j
 git clone https://github.com/Ansh642/Ai-todo-agent.git
 cd ai-agentic-todo
 pnpm install
-
+```
 
 2. Create a `.env` file:
 
@@ -42,6 +42,7 @@ pnpm install
 GOOGLE_API_KEY=your_google_api_key
 DATABASE_URL=postgresql://postgres:admin@localhost:5431/admin
 ```
+
 
 3. Start PostgreSQL via Docker:
 
