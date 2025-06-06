@@ -1,70 +1,87 @@
 
-````markdown
 # 🧠 AI Agentic To-Do App
 
-A smart to-do list app where users interact using natural language. Powered by Google's Gemini AI, Node.js, Drizzle ORM, and PostgreSQL, the app understands your input, plans actions, and manages tasks through CRUD operations.
+A smart to-do list application powered by Google's Gemini AI, built using Node.js, Drizzle ORM, and PostgreSQL. This app lets users manage tasks using natural language input through an agentic workflow: **Plan → Action → Observation → Output**.
+
+---
 
 ## 🚀 Features
 
-- Natural language task management
-- Gemini 1.5 Flash AI integration
-- Drizzle ORM with PostgreSQL
-- Agentic loop: Plan → Action → Observation → Output
-- CLI-based interaction
+- Natural language task management  
+- Gemini 1.5 Flash AI integration  
+- Drizzle ORM with PostgreSQL  
+- Agentic loop: Plan → Action → Observation → Output  
+- CLI-based interaction  
+
+---
 
 ## 🛠 Tech Stack
 
-- Node.js + readline-sync
-- Drizzle ORM
-- PostgreSQL (via Docker)
-- Google Generative AI (Gemini)
-- dotenv
+- Node.js + readline-sync  
+- Drizzle ORM  
+- PostgreSQL (via Docker)  
+- Google Generative AI (Gemini)  
+- dotenv  
+- pnpm  
+
+---
 
 ## 📦 Setup
 
-1. Clone the repo & install dependencies  
+1. Clone the repo & install dependencies:
+
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Ansh642/Ai-todo-agent.git
 cd ai-agentic-todo
-npm install
-````
+pnpm install
 
-2. Create `.env` file
 
-```
+2. Create a `.env` file:
+
+```env
 GOOGLE_API_KEY=your_google_api_key
 DATABASE_URL=postgresql://postgres:admin@localhost:5431/admin
 ```
 
-3. Run PostgreSQL using Docker
+3. Start PostgreSQL via Docker:
 
 ```bash
 docker compose up -d
 ```
 
-4. Apply schema with Drizzle
+4. Push schema with Drizzle:
 
 ```bash
-npx drizzle-kit push
+pnpm drizzle-kit push
 ```
 
-5. Start the app
+5. (Optional) Open Drizzle Studio:
+
+```bash
+pnpm studio
+```
+
+6. Start the application:
 
 ```bash
 node index.js
 ```
 
-## 💬 Example
+---
 
-```
+## 💬 Example Interaction
+
+```bash
 >> Add a task to buy groceries
 ✅ Your Todo has been added successfully.
 ```
 
-## ✨ Author
+---
 
-[Ansh Agarwal](https://github.com/Ansh642)
+## 👤 Author
+
+**Ansh Agarwal**
 📧 [anshagarwal642@gmail.com](mailto:anshagarwal642@gmail.com)
+🔗 [GitHub](https://github.com/Ansh642) | [LinkedIn](https://www.linkedin.com/in/ansh-agarwal-b830b3218)
 
-```
-
+---
